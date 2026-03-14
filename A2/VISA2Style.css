@@ -44,7 +44,52 @@ a {
 	display: block;
 }
 
-body {
-	background-color: lightblue;
+body#index {
+	background-color: #7A2C16;
+	margin: 0;
+}
+
+body#p2 {
+	background-color: #D4D4A1;
+	margin: 0;
+}
+
+body#p3{
+	background-color: #346947;
+	margin: 0;
+}
+
+body#p4 {
+	background-color: #137D6B;
+	margin: 0;
+}
+
+body#p5 {
+	background-color: #B8E3DB;
+	margin: 0;
+}
+
+body#p6 {
+	background-color: #D8B0FF;
+	margin: 0;
+}
+
+body#p7 {
+	background-color: #40307A;
+	margin: 0;
+}
+
+body#p8 {
+	background-color: #CFC2FF;
+	margin: 0;
+}
+
+body#p9 {
+	background-color: #375570;
+	margin: 0;
+}
+
+body#p10 {
+	background-color: #8FCAFF;
 	margin: 0;
 }
