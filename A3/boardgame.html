@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "VIS3Style.css">
+		<title>Board Game</title>
+	</head>
+	<body>
+		<header class = "Boardgame">
+			<h1> Boardgame Time!  </h1>
+			<p>
+				Time for fun boardgames!
+			</p>
+			<p>
+				Need a coin flip? Here's a coin!
+			</p>
+		</header>
+		<main>
+			<div class = "coin-container">
+				<div class = "coin-result" id = "coinResult">
+					Coin
+				</div>
+				<div>
+					<button class = "flip-btn" id = "flipBtn">
+						Flip coin
+					</button>
+				</div>
+				<div class = "coin-history" id = "coinHistory">
+					<strong> Recent Flips: </strong>
+					<span> - </span>
+				</div>
+			</div>
+			<div class = "NextPage1">
+				<a href = "Page2.html" class = "Page2Button"> Return to Seat Selection </a>
+			</div>
+		</main>
+		<script src = "coinflip.js"></script>
+	</body>
+</html>
