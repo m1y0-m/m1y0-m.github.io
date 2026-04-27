@@ -45,11 +45,11 @@ nextButtons.forEach(button => {
         const boxHeight = activeBox.offsetHeight;
         buttonArea.style.minHeight = boxHeight + "px";
       }
-      
+
       questionsGrid.classList.add("complete");
       return;
     }
-    
+
     steps[currentStep].classList.remove("active");
     currentStep++;
     steps[currentStep].classList.add("active");
@@ -60,7 +60,7 @@ nextButtons.forEach(button => {
 backButtons.forEach(button => {
 	button.addEventListener("click", () => {
 		if (currentStep === 0) return;
-		
+
 		steps[currentStep].classList.remove("active");
 		currentStep--;
 		steps[currentStep].classList.add("active");
@@ -78,7 +78,7 @@ if (quiz1) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -90,7 +90,7 @@ if (quiz1) {
 		projector: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.socializing += 3;
 		scores.homework += 1;
@@ -103,7 +103,7 @@ if (quiz1) {
 	  } else if (mood.value === "upset") {
 		scores.projector += 3;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.projector += 1;
@@ -114,7 +114,7 @@ if (quiz1) {
 		  scores.boardgame += 3;
 		  scores.socializing += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.boardgame += 3;
 		  scores.socializing +=2;
@@ -125,7 +125,7 @@ if (quiz1) {
 			scores.boardgame += 1;
 			scores.projector += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.boardgame += 3;
 	  } else if (time.value == "little") {
@@ -135,8 +135,8 @@ if (quiz1) {
 		  scores.boardgame += 2;
 		  scores.socializing += 2;
 	  }
-  
-  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
@@ -156,7 +156,7 @@ if (quiz1) {
 
 	  window.location.href = pages[topActivity];
 	});
-	
+
 }
 
 
@@ -170,7 +170,7 @@ if (quiz2) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -183,7 +183,7 @@ if (quiz2) {
 		PCgame: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.PCgame += 2;
 		scores.homework += 2;
@@ -197,7 +197,7 @@ if (quiz2) {
 		scores.homework += 2;
 		scores.PCgame += 4;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.PCgame += 1;
@@ -208,7 +208,7 @@ if (quiz2) {
 		  scores.PCgame += 3;
 		  scores.socializing += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.PCgame += 3;
 		  scores.socializing += 2;
@@ -219,7 +219,7 @@ if (quiz2) {
 			scores.PCgame += 1;
 			scores.socializing += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.socializing += 2;
 		  scores.PCgame += 3;
@@ -230,8 +230,8 @@ if (quiz2) {
 		  scores.PCgame += 2;
 		  scores.socializing += 2;
 	  }
-	  
-	  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
@@ -265,7 +265,7 @@ if (quiz3) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -278,7 +278,7 @@ if (quiz3) {
 		PCgame: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.projector += 2;
 		scores.homework += 1;
@@ -292,7 +292,7 @@ if (quiz3) {
 		scores.homework += 3;
 		scores.projector += 1;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.projector += 1;
@@ -303,7 +303,7 @@ if (quiz3) {
 		  scores.projector += 3;
 		  scores.socializing += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.projector += 2;
 		  scores.socializing += 3;
@@ -314,7 +314,7 @@ if (quiz3) {
 			scores.socializing += 1;
 			scores.projector += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.projector += 3;
 		  scores.socializing += 2;
@@ -325,8 +325,8 @@ if (quiz3) {
 		  scores.projector += 2;
 		  scores.socializing += 2;
 	  }
-	  
-	  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
@@ -361,7 +361,7 @@ if (quiz4) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -374,7 +374,7 @@ if (quiz4) {
 		PCgame: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.socializing += 3;
 		scores.homework += 1;
@@ -388,7 +388,7 @@ if (quiz4) {
 		scores.projector += 3;
 		scores.PCgame += 1;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.projector += 1;
@@ -399,7 +399,7 @@ if (quiz4) {
 		  scores.projector += 3;
 		  scores.socializing += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.PCgame += 3;
 		  scores.socializing += 2;
@@ -410,7 +410,7 @@ if (quiz4) {
 			scores.socializing += 1;
 			scores.projector += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.projector += 3;
 		  scores.PCgame += 2;
@@ -421,8 +421,8 @@ if (quiz4) {
 		  scores.PCgame += 2;
 		  scores.socializing += 2;
 	  }
-	  
-	  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
@@ -455,7 +455,7 @@ if (quiz6) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -468,7 +468,7 @@ if (quiz6) {
 		PCgame: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.homework += 3;
 		scores.PCgame += 1;
@@ -482,7 +482,7 @@ if (quiz6) {
 		scores.projector += 3;
 		scores.PCgame += 1;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.projector += 1;
@@ -493,7 +493,7 @@ if (quiz6) {
 		  scores.PCgame += 3;
 		  scores.socializing += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.PCgame += 3;
 		  scores.socializing += 2;
@@ -504,7 +504,7 @@ if (quiz6) {
 			scores.homework += 1;
 			scores.projector += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.socializing += 3;
 		  scores.PCgame += 2;
@@ -515,8 +515,8 @@ if (quiz6) {
 		  scores.homework += 2;
 		  scores.socializing += 2;
 	  }
-	  
-	  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
@@ -549,7 +549,7 @@ if (quiz5) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -562,7 +562,7 @@ if (quiz5) {
 		PCgame: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.socializing += 3;
 		scores.homework += 1;
@@ -576,7 +576,7 @@ if (quiz5) {
 		scores.projector += 3;
 		scores.homework += 1;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.projector += 1;
@@ -587,7 +587,7 @@ if (quiz5) {
 		  scores.projector += 3;
 		  scores.socializing += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.projector += 2;
 		  scores.socializing += 3;
@@ -598,7 +598,7 @@ if (quiz5) {
 			scores.socializing += 1;
 			scores.projector += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.socializing += 2;
 		  scores.projector += 3;
@@ -609,8 +609,8 @@ if (quiz5) {
 		  scores.homework += 2;
 		  scores.socializing += 1;
 	  }
-	  
-	  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
@@ -643,7 +643,7 @@ if (quiz7) {
 	  const work = document.querySelector('input[name = "work"]:checked');
 	  const energy = document.querySelector('input[name = "energy"]:checked');
 	  const time = document.querySelector('input[name = "time"]:checked');
-	  
+
 	  if (!mood || !work || !energy || !time) {
 		alert("Oops! You need to answer each question so we can properly decide your activity!");
 		return;
@@ -656,7 +656,7 @@ if (quiz7) {
 		PCgame: 0,
 		socializing: 0
 	  };
-	  
+
 	  if (mood.value === "stressed") {
 		scores.PCgame += 2;
 		scores.homework += 1;
@@ -670,7 +670,7 @@ if (quiz7) {
 		scores.PCgame += 1;
 		scores.homework += 2;
 	  }
-	  
+
 	  if (work.value == "lot") {
 		  scores.homework += 3;
 		  scores.PCgame += 1;
@@ -681,7 +681,7 @@ if (quiz7) {
 		  scores.PCgame += 3;
 		  scores.boardgame += 3;
 	  }
-	  
+
 	  if (energy.value == "lot") {
 		  scores.boardgame += 3;
 		  scores.PCgame += 2;
@@ -692,7 +692,7 @@ if (quiz7) {
 			scores.PCgame += 1;
 			scores.homework += 1;
 	  }
-	  
+
 	  if (time.value == "plenty") {
 		  scores.boardgame += 3;
 		  scores.PCgame += 2;
@@ -703,8 +703,8 @@ if (quiz7) {
 		  scores.PCgame += 2;
 		  scores.boardgame += 1;
 	  }
-	  
-	  
+
+
 	  let topActivity = "boardgame";
 	  let highestScore = scores.boardgame;
 
