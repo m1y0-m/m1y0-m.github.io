@@ -729,22 +729,8 @@ body.page-seat header, body.page-seat .seatSelection, body.page-seat
 	z-index: 1;
 }
 
-body.page-seat .page2Header h1 {
-	font-size: 4vw;
-	text-shadow: 0.3vh 0.3vh 0.5vh rgba(0, 0, 0, 0.2);
-	background: linear-gradient(135deg, #004d66, #0088aa);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-}
-
 body.page-seat .page2Header p {
 	font-size: 1.8vw;
-	background: rgba(255, 255, 240, 0.7);
-	display: inline-block;
-	padding: 1vh 2vw;
-	border-radius: 2vw;
-	backdrop-filter: blur(0.3vh);
 }
 
 .seat-zone:hover {
@@ -986,11 +972,8 @@ body.page-home h1 {
 }
 
 body.page-home p {
-	background: rgba(255, 255, 240, 0.7);
-	display: inline-block;
-	padding: 1vh 2vw;
-	border-radius: 2vw;
-	backdrop-filter: blur(0.2vh);
+	color: #2c5a6e;
+	text-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 0.1);
 }
 
 body.page-home .OutImage img {
